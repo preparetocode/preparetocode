@@ -1,8 +1,10 @@
 # preparetocode
 
-### Developing locally
+[![Stories in Ready](https://badge.waffle.io/preparetocode/preparetocode.github.io.png?label=ready&title=Ready)](http://waffle.io/preparetocode/preparetocode.github.io)
 
-#### Clone and install dependancies
+## Developing locally
+
+### Clone and install dependancies
 
 ```
 git clone git@github.com:preparetocode/preparetocode.git
@@ -10,8 +12,16 @@ cd preparetocode
 bundle
 ```
 
-#### Run
+### Run
 
 ```
 middleman s
+```
+
+### Deployment
+
+Currently deployment is manual and only available to admins
+
+```
+rake deploy
 ```
