@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Git</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <link href="/stylesheets/syntax.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body class="posts posts_git posts_git_index">
+
+    <h1>Git</h1>
+    <address class="">
+      By <span><a href="//github.com/leggsimon">Simon Legg</a></span>
+    </address>
+    <p>==Although== you should have a version of git that Xcode installs you can upgrade to the latest using Homebrew.</p>
+<pre class="highlight plaintext"><code>brew install git
+source &lt;.zshrc|.bashrc&gt;
+</code></pre><pre class="highlight plaintext"><code>puts "hello"
+</code></pre>
+<h3>Git Config</h3>
+
+<p>After installing git you&rsquo;ll have to set up your config so you don&rsquo;t have to log in to Github every time you want to do something. The Github Docs do a good job of explaining this <a href="https://help.github.com/articles/set-up-git/">here</a></p>
+
+<h3>SSH config</h3>
+
+<p>Official Github Docs <a href="https://help.github.com/articles/generating-an-ssh-key/">here</a></p>
+<pre class="highlight plaintext"><code>ssh-keygen -t rsa -b 4096 -C "&lt;your-github-login-email&gt;"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+</code></pre>
+<ol>
+<li>Go to your <a href="https://github.com/settings/keys">Github SSH settings</a></li>
+<li>Click <code>New SSH key</code></li>
+<li>Enter a name for your computer (e.g. work laptop)</li>
+<li>Copy your SSH key by entering <code>pbcopy &lt; ~/.ssh/id_rsa.pub</code> in the terminal and paste it into the <code>key</code> box.</li>
+</ol>
+
+  </body>
+</html>

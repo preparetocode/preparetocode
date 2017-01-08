@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Ruby Version Manager (rvm)</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <link href="/stylesheets/syntax.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body class="posts posts_ruby posts_ruby_index">
+
+    <h1>Ruby Version Manager (rvm)</h1>
+    <address class="">
+      By <span><a href="//github.com/leggsimon">Simon Legg</a></span>
+    </address>
+    <h2>Installation</h2>
+<pre class="highlight plaintext"><code>\curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
+<p>After installation you&rsquo;ll need to do a few things:</p>
+
+<ol>
+<li><code>source</code> your <code>.bashrc</code>/<code>.zshrc</code> or exit and reopen your terminal. I use zsh so I would enter</li>
+</ol>
+<pre class="highlight plaintext"><code>source ~/.zshrc
+</code></pre>
+<ol>
+<li>Tell <code>rvm</code> to use it&rsquo;s ruby instead of the, likely out of date, system version by default. You can do this by running</li>
+</ol>
+<pre class="highlight plaintext"><code>rvm --default use &lt;ruby-version&gt; (mine was 2.3.3 at time of writing so `rvm --default use 2.3.3`)
+</code></pre>
+<p>Now if you run <code>ruby --version</code> you should see the most recent version you installed</p>
+
+  </body>
+</html>

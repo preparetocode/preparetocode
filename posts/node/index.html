@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Node</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <link href="/stylesheets/syntax.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body class="posts posts_node posts_node_index">
+
+    <h1>Node</h1>
+    <address class="">
+      By <span><a href="//github.com/leggsimon">Simon Legg</a></span>
+    </address>
+    <h2>Prerequesites</h2>
+
+<ul>
+<li>Homebrew installed</li>
+</ul>
+
+<h2>Installation</h2>
+<pre class="highlight plaintext"><code>brew install node
+</code></pre><pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">method</span>
+  <span class="n">stuff</span>
+<span class="k">end</span>
+</code></pre>
+<h2>Check</h2>
+<pre class="highlight plaintext"><code>node -v
+npm -v
+</code></pre>
+<aside class="danger">This is a dangerous aside</aside>
+
+<aside class="warn">This is a warning aside</aside>
+
+<aside class="tip">This is a tip aside</aside>
+
+<h2>Tips</h2>
+
+<p>Prepending <code>node_modules/.bin</code> to your <code>$PATH</code> will mean you have to install fewer things globally and will pick up local updates to modules that provide a cli.</p>
+<pre class="highlight plaintext"><code>export PATH=node_modules/.bin:$PATH
+</code></pre>
+<h2>Extras</h2>
+
+<h3><code>n</code></h3>
+
+<p><code>n</code> is a version manager for node (much like Ruby&rsquo;s <code>rvm</code>) it&rsquo;s very useful for having multiple versions of node on your machine that you can switch between when you need.</p>
+
+<h4>Installation</h4>
+<pre class="highlight plaintext"><code>brew install n
+</code></pre>
+<p><em>N.B.</em> When you use <code>n</code> to install a node version you may get an error <code>Error: sudo required</code> to avoid permissions problems and having to sudo everything down the line it’s worth running <code>chown -R $USER /usr/local</code> (you may need to sudo this) to give npm permission to install globally before you do anything else</p>
+
+<p>With <code>n</code> installed you can now easily install different <code>node</code> versions. If I want to install <code>node-5.5.0</code> I can just enter <code>n 5.5.0</code> which will install it and enter <code>n</code> to select and switch between versions.</p>
+
+<p><em>N.B.</em> globally installed npm packages are installed against the node version so if you installed <code>eslint</code> for example while on <code>node-7.3.0</code> it wouldn&rsquo;t be available if you switched to <code>node-5.5.0</code>. You&rsquo;ll have to install it again. However when you switch back to <code>7.3.0</code> you won&rsquo;t have to install it again.</p>
+
+  </body>
+</html>
