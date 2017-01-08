@@ -8,6 +8,7 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "posts/*", :layout => :post
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -25,6 +26,10 @@ end
 
 config[:trailing_slash] = false
 
+# config[:markdown_engine] = :kramdown
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :directory_indexes
 ###
 # Helpers

@@ -3,9 +3,12 @@
 
 body {
   background: #ECC561;
-  text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
+  
+  .welcome {
+    text-align: center;
+  }
 }
 
 .logo img {

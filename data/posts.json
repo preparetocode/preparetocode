@@ -1,15 +1,15 @@
 {
   "required": [
-    { "title": "Ruby", "href": "ruby" },
-    { "title": "Node", "href": "node" }
+    { "title": "Ruby", "href": "posts/ruby" },
+    { "title": "Node", "href": "posts/node" }
   ],
   "useful": [
-    { "title": "Vim", "href": "vim" },
-    { "title": "Homebrew", "href": "homebrew" }
+    { "title": "Git", "href": "posts/git" },
+    { "title": "Homebrew", "href": "posts/homebrew" }
   ],
   "advanced": [
-    { "title": "Postgres", "href": "postgres" },
-    { "title": "Heroku", "href": "heroku" }
+    { "title": "Postgres", "href": "posts/postgres" },
+    { "title": "Heroku", "href": "posts/heroku" }
   ],
   "new": []
 }
