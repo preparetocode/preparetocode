@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+ - 2.3.0
+
+branches:
+  only:
+    - development
+
+script:
+  - 'git status'
+  - 'bundle exec rake publish'
