@@ -7,4 +7,5 @@ branches:
     - development
 
 script:
+  - 'git status'
   - 'bundle exec rake publish'
