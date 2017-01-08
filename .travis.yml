@@ -7,4 +7,7 @@ branches:
     - development
 
 script:
-- rake deploy
+  - 'middleman build'
+
+after_success:
+  - 'rake deploy'
