@@ -10,4 +10,4 @@ script:
   - 'bundle exec middleman build'
 
 after_success:
-  - 'bundle exec rake publish'
+  - './script/deploy.sh'
